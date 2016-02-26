@@ -1,28 +1,110 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        font: 20px "Montserrat", sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+    }
+
+    p {font-size: 16px;}
+
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+    .navbar-nav li a:hover {
+        color: #1abc9c !important;
+    }
+
+    .bg-1 {
+        background-color: #1abc9c; /* Green */
+        color: #ffffff;
+    }
+    .bg-2 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+    }
+
+    footer {
+        background-color: #2f2f2f;
+        color: #ffffff;
+    }
+
+</style>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Me</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#who">Qui&eacute;n</a></li>
+                <li><a href="#what">Qu&eacute;</a></li>
+                <li><a href="#where">D&oacute;nde</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="who" class="container-fluid bg-1 text-center">
+    <h3>¿Qui&eacute;n soy yo?</h3>
+    <img src="images/worker.jpg" class="img-circle" alt="Bird">
+    <h3>Nelo Pauselli</h3>
+</div>
+
+<div id="what" class="container-fluid bg-2 text-center">
+    <h3>¿Qu&eacute; hago?</h3>
+    <img src="images/code.png" class="img-circle" alt="Bird">
+    <p>Desarrollo sistemas</p>
+</div>
+
+<div id="where" class="container-fluid bg-1 text-center">
+    <h3>¿D&oacute;nde pueden contactarme?</h3>
+    <p>
+       <a href="mailto:nelopauselli@gmail.com">nelopauselli@gmail.com</a>
+    </p>
+</div>
+
+<div id="readme" class="container-fluid bg-2 text-center">
+    <h3>¿D&oacute;nde pueden leerme?</h3>
+    <a href="http://nelopauselli.blogspot.com" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-blog"></span> Blog
+    </a>
+</div>
+
+
+<footer class="container-fluid text-center">
+    <p><a href="http://github.com">power by github</a></p>
+</footer>
+
+</body>
 </html>
