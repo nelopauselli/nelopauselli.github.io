@@ -4,7 +4,10 @@
         color: #f5f6f7;
     }
 
-    p {font-size: 16px;}
+    p {
+        font-size: 16px;
+        padding: 20px;
+    }
 
     .container-fluid {
         padding-top: 70px;
